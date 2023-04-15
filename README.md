@@ -19,15 +19,16 @@
 
 html
 ```html
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;600&display=swap" rel="stylesheet">
 ```
 
 css
 
 ```css
 body {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
 }
 ```
 - 나눔스퀘어네오
@@ -63,3 +64,25 @@ body{
   font-weight: 300;
 }
 ```
+-더잠실체 ([눈누](https://noonnu.cc/))
+
+css
+```css
+@font-face {
+  font-family: 'TheJamsil2Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil2Light.woff2') format('woff2');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TheJamsil4Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil4Medium.woff2') format('woff2');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-style: normal;
+}
+body{
+  font-family: "TheJamsil2Light";
+}
