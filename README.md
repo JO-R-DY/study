@@ -15,7 +15,7 @@
 ```
 
 >4. 폰트연결
-- 구글 ([Google Fonts](https://fonts.google.com/)에서 고른 폰트 파일을 가져옵니다.)
+- 구글 ([Google Fonts](https://fonts.google.com/))
 
 html
 ```html
