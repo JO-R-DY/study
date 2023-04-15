@@ -1,7 +1,6 @@
 # 시작하기
 >1. 프로젝트 폴더, 파일(html,css,js) 생성
->2. css 초기화 (reset.css)
-[reset-css CND](https://www.jsdelivr.com/package/npm/reset-css)
+>2. css 초기화 ([reset-css CND](https://www.jsdelivr.com/package/npm/reset-css))
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 ```
