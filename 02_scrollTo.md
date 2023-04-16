@@ -1,13 +1,70 @@
 - html
 
 ```html
-
+<button class="totop">
+    <span>TOP</span>
+</button>
 ```
 
-- css
+- common.css (변수)
 
 ```css
+html{
+  --color-black: #211B15;
+  --color-brown: #7A563C;
+  --color-light_gray: #d9d9d9;
+}
+```
 
+- common.css (키프레임)
+
+```css
+@keyframes totop{
+  0%{opacity: 0; top: 16px;}
+  50%{opacity: 1; top: 8px;}
+  98%{opacity: 1; top: 8px;}
+  100%{opacity: 0; top: 16px;}
+}
+```
+
+- main.css
+
+```css
+.totop{
+  display: block; /*크기*/
+  width: 60px;
+  height: 60px; 
+  background-color: var(--color-black); /*스타일*/
+  color: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  position: fixed; /*위치*/
+  bottom: 40px;
+  right: 40px;
+  z-index: 1;
+  cursor: pointer; /*효과*/
+}
+.totop span{
+  position: absolute; /*위치*/
+  bottom: 4px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.totop::before{
+  content: "";
+  display: block; /*크기*/
+  opacity: 0;
+  width: 12px;
+  height: 20px;
+  background: url(./img/quick_icon.png) no-repeat center center; /*스타일*/
+  position: absolute; /*위치*/
+  top: 16px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  animation: totop 2s infinite; /*효과*/
+}
 ```
 
 - js
