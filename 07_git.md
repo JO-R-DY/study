@@ -45,3 +45,11 @@ git commit -m '버전이름'
 ```
 git log
 ```
+원격 저장소에 주소이름(origin), 주소 추가
+```
+git remote add origin 레포지토리주소
+```
+- 업로드
+```
+git push origin master
+```
